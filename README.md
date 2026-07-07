@@ -63,7 +63,7 @@ The framework is decoupled into modular layers to maintain high code maintainabi
 ### Clone Repository
 
 ```bash
-git clone https://github.com/muhammad-umair09/netmon-report.git
+git clone https://github.com/muhammad-umair09/netmon-project.git
 cd netmon-report
 
 ```
