@@ -2,7 +2,6 @@
 
 An automated, cross-platform Network Monitoring, Analytics, and Security Reporting Engine built in Python. Designed for Security Operations Center (SOC) analysts, Network Administrators, and blue-team practitioners looking to implement programmatic network visibility, asset tracking, log correlation, and compliance PDF generation.
 
----
 
 ## 📝 Overview
 
@@ -10,7 +9,7 @@ An automated, cross-platform Network Monitoring, Analytics, and Security Reporti
 
 Asal duniya mein, ek SOC Analyst ya Network Engineer ka bohot saara waqt network par najar rakhne, threats dhoodhne, aur seniors ke liye reports banane mein jata hai. Yeh project dikhata hai ki kaise **Python scripting ke zariye in saare kaamo ko auto-pilot par dala ja sakta hai**.
 
----
+
 
 ## 🚀 Features
 
@@ -19,18 +18,6 @@ Asal duniya mein, ek SOC Analyst ya Network Engineer ka bohot saara waqt network
 * **Security Threat Detection:** Implements precise algorithmic heuristics to uncover anomalies such as massive horizontal data exfiltration spikes or brute-force/port scanning footprints.
 * **Executive Document Compilation:** Uses `matplotlib` to render clean traffic distribution visuals and generates standardized, client-ready PDF compliance briefs via `fpdf2`.
 * **Bare-Metal Resource Auditing:** Captures host environment baseline footprints (CPU, memory overhead, and network socket interface throughput).
-
----
-
-## 📸 Screenshots
-
-*(Place screenshots here after execution)*
-
-| Operational Log Stream | Compiled PDF Report |
-| --- | --- |
-|  |  |
-
----
 
 ## 🏗️ Architecture
 
@@ -41,7 +28,6 @@ The framework is decoupled into modular layers to maintain high code maintainabi
 3. **Data Core Analytics Layer (`core/analyzer.py`)**: Aggregates network trends and flags suspicious nodes.
 4. **Export Engine (`reporting/`)**: Converts internal telemetry data arrays into clean CSV structures and visual PDF documents.
 
----
 
 ## 🛠️ Technology Stack
 
@@ -51,7 +37,6 @@ The framework is decoupled into modular layers to maintain high code maintainabi
 * **Document Engine:** FPDF2 (Strict coordinate-based PDF layout generation)
 * **Hardware Instrumentation:** Psutil (Process & system instrumentation counters)
 
----
 
 ## 💾 Installation
 
@@ -96,7 +81,6 @@ python main.py
 
 ```
 
----
 
 ## 📖 Usage
 
@@ -107,7 +91,7 @@ python main.py
 3. **Log Aggregation & Extraction:** The framework parses the logs to identify top active devices, classify communication protocols, and flag abnormal behaviors based on connection thresholds.
 4. **Report Distribution:** The tool outputs a structured spreadsheet containing the discovered network devices (`discovered_assets.csv`) and creates a presentation-ready executive summary (`Executive_Network_Security_Report.pdf`).
 
----
+
 
 ## 📂 Project Structure
 
@@ -140,7 +124,6 @@ netmon_project/
 
 ```
 
----
 
 ## ⚙️ Configuration
 
@@ -158,14 +141,14 @@ FAILED_CONN_THRESHOLD = 5         # Failed connection threshold for scanning ale
 
 ```
 
----
+
 
 ## 🔒 Security Considerations
 
 * **Least Privilege:** This tool is designed to run in user-space using simulated telemetry datasets. If you switch to raw packet capture modes using native sockets or tools like Scapy, you must run the script with elevated administrative permissions (`sudo` or Windows Administrator mode).
 * **Data Privacy:** Raw network logs can contain sensitive infrastructure details. In a production environment, ensure that all internal IP addresses, user credentials, and proprietary payload data are sanitized or masked before saving logs to public repositories.
 
----
+
 
 ## 🧪 Testing
 
@@ -177,17 +160,7 @@ python -m unittest discover -s core -p "*_test.py"
 
 ```
 
----
 
-## 🔍 Troubleshooting
-
-| Issue | Root Cause | Solution |
-| --- | --- | --- |
-| `ModuleNotFoundError` | Missing external libraries in the environment. | Run `pip install -r requirements.txt` or install `pandas`, `matplotlib`, `fpdf2`, and `psutil` inside your active virtual environment. |
-| PDF generation fails | File access errors or missing font resources. | Close any open instances of the PDF report file and verify that the application has write permissions for the `data/reports/` directory. |
-| Empty charts or tables | Missing initial tracking data. | Verify that the log simulation scripts ran successfully and that files exist inside `data/raw/`. |
-
----
 
 ## 📈 Performance Optimization
 
@@ -233,38 +206,3 @@ The code in this repository follows standard formatting practices to ensure long
 
 ---
 
-## 📄 License
-
-Distributed under the MIT License. See the `LICENSE` file for details.
-
----
-
-## 🧑‍💻 Author
-
-* **Developer:** [AUTHOR_NAME]
-* **GitHub Profile:** @[GITHUB_USERNAME]
-
----
-
-## 🎁 Acknowledgements
-
-* Thanks to the open-source maintainers of `pandas`, `matplotlib`, and `fpdf2` for providing the building blocks for this project.
-* Inspired by classic blue-team automation frameworks and network log collection tools.
-
----
-
-## 📞 Support
-
-For support, please open an active issue request ticket inside the GitHub project repository management system or star the project to show your support.
-
----
-
-## ⭐ Star the Repository
-
-If you found this project helpful for your learning or portfolio, please give it a star on GitHub! It helps more developers discover the framework and supports ongoing open-source development.
-
-[Click here to star this repository! ⭐]#   n e t m o n - p r o j e c t 
- 
- #   n e t m o n - p r o j e c t 
- 
- 
